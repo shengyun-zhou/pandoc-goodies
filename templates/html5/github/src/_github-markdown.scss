@@ -42,7 +42,7 @@
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: #24292e;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Microsoft YaHei", system-ui;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -50,7 +50,7 @@
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
-  padding: 45px;
+  padding: 15px;
     
   a {
     color: #0366d6;
@@ -72,7 +72,7 @@
   }
 
   strong {
-    font-weight: 600;
+    font-weight: bold;
   }
 
   // ------------------------------------------------------------------------------
@@ -86,7 +86,7 @@
   h6 {
     margin-top: 24px;
     margin-bottom: 16px;
-    font-weight: 600;
+    font-weight: bold;
     line-height: 1.25;
   }
 
@@ -237,7 +237,7 @@
       margin-top: 16px;
       font-size: 1em;
       font-style: italic;
-      font-weight: 600;
+      font-weight: bold;
     }
 
     & dd {
@@ -250,14 +250,14 @@
   // ------------------------------------------------------------------------------
 
   code {
-    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: "Microsoft YaHei Mono", Consolas, monospace;
     font-size: 12px;
   }
 
   pre {
     margin-top: 0;
     margin-bottom: 0;
-    font: 12px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font: 12px "Microsoft YaHei Mono", Consolas, monospace;
   }
 
 
@@ -322,7 +322,7 @@
     border-collapse: collapse;
 
     & th {
-      font-weight: 600;
+      font-weight: bold;
     }
 
     & th,
@@ -361,6 +361,7 @@
     font-size: 85%;
     background-color: rgba(27,31,35,0.05);
     border-radius: 3px;
+    white-space: pre-wrap;
   }
 
   code::before,
@@ -378,7 +379,6 @@
     margin: 0;
     font-size: 100%;
     word-break: normal;
-    white-space: pre;
     background: transparent;
     border: 0;
   }

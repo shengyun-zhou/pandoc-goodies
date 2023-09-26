@@ -5,12 +5,13 @@
    Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
    Copyright (c) 2017 GitHub Inc.
 */
+@import '_highlight.css';
 .markdown-body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: #24292e;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Microsoft YaHei", system-ui;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -18,7 +19,7 @@
   min-width: 200px;
   max-width: 980px;
   margin: 0 auto;
-  padding: 45px;
+  padding: 15px;
 }
 .markdown-body a {
   color: #0366d6;
@@ -37,7 +38,7 @@
   text-decoration: none;
 }
 .markdown-body strong {
-  font-weight: 600;
+  font-weight: bold;
 }
 .markdown-body h1,
 .markdown-body h2,
@@ -47,7 +48,7 @@
 .markdown-body h6 {
   margin-top: 24px;
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 1.25;
 }
 .markdown-body h1 {
@@ -166,20 +167,20 @@
   margin-top: 16px;
   font-size: 1em;
   font-style: italic;
-  font-weight: 600;
+  font-weight: bold;
 }
 .markdown-body dl dd {
   padding: 0 16px;
   margin-bottom: 16px;
 }
 .markdown-body code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "Microsoft YaHei Mono", Consolas, monospace;
   font-size: 12px;
 }
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 0;
-  font: 12px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: 12px "Microsoft YaHei Mono", Consolas, monospace;
 }
 .markdown-body p,
 .markdown-body blockquote,
@@ -223,7 +224,7 @@
   border-collapse: collapse;
 }
 .markdown-body table th {
-  font-weight: 600;
+  font-weight: bold;
 }
 .markdown-body table th, .markdown-body table td {
   padding: 6px 13px;
@@ -249,6 +250,7 @@
   font-size: 85%;
   background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
+  white-space: pre-wrap;
 }
 .markdown-body code::before,
 .markdown-body code::after {
@@ -263,7 +265,6 @@
   margin: 0;
   font-size: 100%;
   word-break: normal;
-  white-space: pre;
   background: transparent;
   border: 0;
 }
